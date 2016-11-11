@@ -13,7 +13,7 @@ public class LazyPrompt{
     //
     let window: UIWindow = UIApplication.shared.keyWindow!
     var mainview = UIView();
-    let debug = true
+    let debug = false
     // 默认主题
     var theme = "yjzx"
     var confirmAction:((_ e:UIButton) -> Void)? = nil
@@ -51,7 +51,7 @@ public class LazyPrompt{
     //
     // 创建按钮
     //
-    fileprivate func button(subtitle:String,view:UIView) -> UIButton{
+    fileprivate func button(subtitle:String,view:UIView){
         let Button = UIButton();
         let bounds = self.lazyTheme.confirmButtonBounds
         let color  = self.lazyTheme.ButtonColor
@@ -65,7 +65,6 @@ public class LazyPrompt{
             Button.layer.cornerRadius = radius
         }
         view.addSubview(Button)
-        return Button
     }
     
     // 头部信息
@@ -204,7 +203,7 @@ public class LazyPrompt{
         let mainview = self.views()
         self.mainview.addSubview(mainview)
         //确认按钮
-        let button = self.button(subtitle:"确 认",view: mainview)
+        self.button(subtitle:"确 认",view: mainview)
         //头部信息
         self.title(subtitle: title, view: mainview)
         //提示信息

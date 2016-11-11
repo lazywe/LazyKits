@@ -66,10 +66,10 @@ class yjzx:CustomTheme{
     //alert 容器
     internal var alertBounds:Bounds{
         get{
-            var width = self.mainBounds.width - 60
-            var height = width/2+20
-            var x = self.mainBounds.width/2
-            var y = self.mainBounds.height/2
+            let width = self.mainBounds.width - 60
+            let height = width/2+20
+            let x = self.mainBounds.width/2
+            let y = self.mainBounds.height/2
             return Bounds(x:x,y:y,width: width, height: height,radius:5)
         }
     }
@@ -99,10 +99,10 @@ class yjzx:CustomTheme{
     //默认按钮
     internal var ButtonBounds:Bounds{
         get{
-            var x:CGFloat = 5.0
-            var height = self.alertBounds.height/3 - 10
-            var y = self.alertBounds.height - height - x
-            var width = self.alertBounds.width - 2*x
+            let x:CGFloat = 5.0
+            let height = self.alertBounds.height/3 - 10
+            let y = self.alertBounds.height - height - x
+            let width = self.alertBounds.width - 2*x
             return Bounds(x: x, y: y, width: width, height: height, radius: 5)
         }
     }
@@ -110,10 +110,10 @@ class yjzx:CustomTheme{
     //确认按钮
     internal var confirmButtonBounds:Bounds{
         get{
-            var x:CGFloat = 5.0
-            var height = self.alertBounds.height/3 - 10
-            var y = self.alertBounds.height - height - x
-            var width = self.alertBounds.width - 2*x
+            let x:CGFloat = 5.0
+            let height = self.alertBounds.height/3 - 10
+            let y = self.alertBounds.height - height - x
+            let width = self.alertBounds.width - 2*x
             return Bounds(x: x, y: y, width: width, height: height, radius: 5)
         }
     }
@@ -121,10 +121,10 @@ class yjzx:CustomTheme{
     // 顶部关闭按钮样式
     internal var closeButtonBounds:Bounds{
         get{
-            var x:CGFloat = 5.0
-            var height = self.alertBounds.height/3
-            var y = self.alertBounds.height - height - x
-            var width = self.alertBounds.width - 2*x
+            let x:CGFloat = 5.0
+            let height = self.alertBounds.height/3
+            let y = self.alertBounds.height - height - x
+            let width = self.alertBounds.width - 2*x
             return Bounds(x: x, y: y, width: width, height: height, radius: 5)
         }
     }
@@ -132,10 +132,10 @@ class yjzx:CustomTheme{
      // 取消按钮样式
     internal var cancelButtonBounds:Bounds {
         get{
-            var x:CGFloat = 5.0
-            var height = self.alertBounds.height/3
-            var y = self.alertBounds.height - height - x
-            var width = self.alertBounds.width - 2*x
+            let x:CGFloat = 5.0
+            let height = self.alertBounds.height/3
+            let y = self.alertBounds.height - height - x
+            let width = self.alertBounds.width - 2*x
             return Bounds(x: x, y: y, width: width, height: height, radius: 5)
         }
     }
